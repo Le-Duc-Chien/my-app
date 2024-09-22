@@ -1,25 +1,99 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+
 function Header() {
   return (
-    <div class="d-flex align-items-start">
-    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-      <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
-      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
-    </div>
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
-      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-      <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
-    </div>
-    
-  </div>
-  
+    <nav className="header">
+      <div className="logo">
+        <img
+          className="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGuO89M7LIEwUmVB4k7w-npEwSnRjb9F2cQ&s"
+          alt="Logo"
+          height="50"
+        />
+      </div>
+      <div className="list-button">
+        <span>Thể loại</span>
+        <div className="dropdown-content list-one">
+          <div className="dropdown">
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+          </div>
+        </div>
+      </div>
+      <div className="list-button">
+        <span>Quốc gia</span>
+        <div className="dropdown-content list-two">
+          <div className="dropdown">
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+          </div>
+        </div>
+      </div>
+      <div className="list-button">
+        <span>Phim lẻ</span>
+        <div className="dropdown-content list-three">
+          <div className="dropdown">
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+          </div>
+        </div>
+      </div>
+      <div className="list-button">
+        <span>Phim bộ</span>
+        <div className="dropdown-content list-four">
+          <div className="dropdown">
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+            <p>Hello World!</p>
+          </div>
+        </div>
+      </div>
+      <div className="list-button">
+        <span>Chiếu rạp</span>
+      </div>
+      <div className="list-button">
+        <span>Sắp chiếu</span>
+      </div>
+
+      <div className="search-container">
+        <input
+          className="search"
+          type="text"
+          name="name"
+          placeholder="Search"
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </nav>
   );
 }
+
 export default Header;

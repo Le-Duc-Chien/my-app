@@ -3,3 +3,87 @@
   padding: 0;
   box-sizing: border-box;
 }
+.header {
+  background-color: #333333;
+  display: flex;
+}
+.logo {
+  margin-top: 5px;
+}
+.list-button {
+  position: relative;
+  display: inline-block;
+  color: #bbb;
+  line-height: 50px;
+  margin: 10px 20px;
+}
+
+.list-button:hover .dropdown-content {
+  display: block;
+}
+.list-button span:hover{
+  color: red;
+}
+.search {
+  width: 300px;
+  height: 30px;
+  outline: none;
+  background-color: #333333;
+  border: 1px solid #999999;
+  margin-top: 18px;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 17px;
+  color: white;
+}
+.search:focus {
+  border: 1px solid rgb(6, 119, 176);
+}
+.btn-search {
+  margin-top: 18px;
+  height: 30px;
+  width: 100px;
+  border-radius: 17px;
+  margin-left: 20px;
+  background-color: #333333;
+  border: 1px solid #999999;
+  color: #bbb;
+}
+.btn-search:hover {
+  background-color: #1c1414;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+  width: 400px;
+  background-color: #1c1414;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: -15px;
+  opacity: 0.5;
+}
+.dropdown {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.dropdown p {
+  display: flex;
+  width: 130px;
+  padding: 0;
+}
+.dropdown p:hover{
+  color: red;
+}
+.list-two{
+  margin-left: -110px;
+}
+.list-three{
+  margin-left: -214px;
+}
+.list-four{
+  margin-left: -306px;
+}
